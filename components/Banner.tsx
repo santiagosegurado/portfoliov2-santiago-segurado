@@ -5,23 +5,34 @@ import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variant";
 import { Link } from "react-scroll";
-import { Canvas } from '@react-three/fiber'
-import { OrbitControls, Stage } from "@react-three/drei";
-import Mac from './Mac'
+import { Canvas } from "@react-three/fiber";
+import {
+  OrbitControls,
+  Sphere,
+  Stage,
+  MeshDistortMaterial,
+} from "@react-three/drei";
+import { useMediaQuery } from 'react-responsive'
+import Mac from "./Mac";
 
 export const Banner = () => {
+  const isPhone = useMediaQuery({
+    query: '(max-width: 426px)'
+  })
+
+
   return (
     <div id="home" className="section h-[85vh]">
       <div className="container mx-auto">
         <div className="flex flex-col gap-y-5 lg:flex-row items-center">
           <div className="flex-1 text-center lg:text-left">
-            <div className="mb-10 text-[36px] flex flex-col font-">
+            <div className="mb-10 text-[36px] flex flex-col font-semisbold">
               <motion.h1
                 variants={fadeIn("up", 0.3)}
                 initial={"hidden"}
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.7 }}
-                className="mb-6 text-[30px] lg:text-[50px] font-bold"
+                className="mb-6 text-[30px] xl:text-[50px] font-bold"
               >
                 Santiago <span className="text-gradient">Segurado</span>
               </motion.h1>
@@ -33,9 +44,9 @@ export const Banner = () => {
               >
                 <TypeAnimation
                   sequence={[
-                    "Full Stack Developer",
+                    "Full Stack",
                     2000,
-                    "Front End Developer",
+                    "Front End",
                     2000,
                   ]}
                   speed={50}
@@ -86,20 +97,36 @@ export const Banner = () => {
               </a>
             </motion.div>
           </div>
-          {/* <Image
-            src="/moon.png"
-            alt="moon"
-            title="moon"
-            width={400}
-            height={400}
-          /> */}
-          <Canvas style={{width:'500px', height:'500px'}}>
+          {/* <Canvas style={{width:'500px', height:'500px'}}>
             <Stage environment={'city'} intensity={0.8}>
               <Mac/>
 
             </Stage>
-            <OrbitControls enableZoom={false}/>
-          </Canvas>
+            <OrbitControls enableZoom={false} autoRotate/>
+          </Canvas> */}
+          <div className="relative">
+            <Canvas style={{width: isPhone ? '300px' : '500px', height: isPhone ? '300px' : '500px'}}>
+              <OrbitControls enableZoom={false} />
+              <ambientLight intensity={1} />
+              <directionalLight position={[3, 4, 2]} />
+              <Sphere args={[1, 100, 200]} scale={2.4}>
+                <MeshDistortMaterial
+                  color={"#220736"}
+                  attach="material"
+                  distort={0.5}
+                  speed={2}
+                />
+              </Sphere>
+            </Canvas>
+            <Image
+            src="/moon.png"
+            alt="moon"
+            title="moon"
+            width={ isPhone ? 200 : 400 }
+            height={isPhone ? 200 : 400}
+            className='absolute top-16 left-16'
+          />
+          </div>
         </div>
       </div>
     </div>

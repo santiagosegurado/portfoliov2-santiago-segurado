@@ -12,13 +12,9 @@ import {
   Stage,
   MeshDistortMaterial,
 } from "@react-three/drei";
-import { useMediaQuery } from "react-responsive";
 import Mac from "./Mac";
 
 export const Banner = () => {
-  const isPhone = useMediaQuery({
-    query: "(max-width: 500px)",
-  });
 
   return (
     <div id="home" className="section h-[85vh]">
@@ -49,6 +45,15 @@ export const Banner = () => {
                   repeat={Infinity}
                 />
               </motion.div>
+              <motion.h2
+                variants={fadeIn("up", 0.3)}
+                initial={"hidden"}
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.7 }}
+                className="text-accent mt-4"
+              >
+                Developer
+              </motion.h2>
             </div>
             <motion.div
               className="flex items-center gap-x-6 justify-center lg:justify-start"
@@ -98,8 +103,14 @@ export const Banner = () => {
             </Stage>
             <OrbitControls enableZoom={false} autoRotate/>
           </Canvas> */}
-          <div className={isPhone ? "hidden" : "relative"}>
-            <Canvas style={{ width: "500px", height: "500px" }}>
+          <motion.div
+            className={"hidden lg:flex"}
+            variants={fadeIn("down", 0.5)}
+            initial={"hidden"}
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
+          >
+            <Canvas style={{ width: "600px", height: "700px" }}>
               <OrbitControls enableZoom={false} />
               <ambientLight intensity={1} />
               <directionalLight position={[3, 4, 2]} />
@@ -112,15 +123,15 @@ export const Banner = () => {
                 />
               </Sphere>
             </Canvas>
-            <Image
+            {/* <Image
               src="/moon.png"
               alt="moon"
               title="moon"
               width={400}
               height={400}
               className="absolute top-16 left-16"
-            />
-          </div>
+            /> */}
+          </motion.div>
         </div>
       </div>
     </div>

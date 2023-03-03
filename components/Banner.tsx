@@ -17,7 +17,7 @@ import Mac from "./Mac";
 
 export const Banner = () => {
   const isPhone = useMediaQuery({
-    query: '(max-width: 426px)'
+    query: '(max-width: 450px)'
   })
 
 
@@ -122,8 +122,8 @@ export const Banner = () => {
             src="/moon.png"
             alt="moon"
             title="moon"
-            width={ isPhone ? 200 : 400 }
-            height={isPhone ? 200 : 400}
+            width={ isPhone ? 250 : 400 }
+            height={isPhone ? 250 : 400}
             className='absolute top-16 left-16'
           />
           </div>

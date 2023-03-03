@@ -12,14 +12,13 @@ import {
   Stage,
   MeshDistortMaterial,
 } from "@react-three/drei";
-import { useMediaQuery } from 'react-responsive'
+import { useMediaQuery } from "react-responsive";
 import Mac from "./Mac";
 
 export const Banner = () => {
   const isPhone = useMediaQuery({
-    query: '(max-width: 500px)'
-  })
-
+    query: "(max-width: 500px)",
+  });
 
   return (
     <div id="home" className="section h-[85vh]">
@@ -43,12 +42,7 @@ export const Banner = () => {
                 viewport={{ once: false, amount: 0.7 }}
               >
                 <TypeAnimation
-                  sequence={[
-                    "Full Stack",
-                    2000,
-                    "Front End",
-                    2000,
-                  ]}
+                  sequence={["Full Stack", 2000, "Front End", 2000]}
                   speed={50}
                   className="text-accent"
                   wrapper="span"
@@ -104,8 +98,8 @@ export const Banner = () => {
             </Stage>
             <OrbitControls enableZoom={false} autoRotate/>
           </Canvas> */}
-          <div className="relative">
-            <Canvas style={{width: isPhone ? '300px' : '500px', height: isPhone ? '300px' : '500px'}}>
+          <div className={isPhone ? "hidden" : "relative"}>
+            <Canvas style={{ width: "500px", height: "500px" }}>
               <OrbitControls enableZoom={false} />
               <ambientLight intensity={1} />
               <directionalLight position={[3, 4, 2]} />
@@ -119,13 +113,13 @@ export const Banner = () => {
               </Sphere>
             </Canvas>
             <Image
-            src="/moon.png"
-            alt="moon"
-            title="moon"
-            width={ isPhone ? 250 : 400 }
-            height={isPhone ? 250 : 400}
-            className='absolute top-16 left-16'
-          />
+              src="/moon.png"
+              alt="moon"
+              title="moon"
+              width={400}
+              height={400}
+              className="absolute top-16 left-16"
+            />
           </div>
         </div>
       </div>

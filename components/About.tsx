@@ -14,7 +14,7 @@ export const About = () => {
 
   return (
     <section id="about" className="section" ref={ref}>
-      <div className="container mx-auto flex flex-col lg:flex-row lg:gap-x-6 gap-y-10 items-center">
+      <div className="container mx-auto flex flex-col lg:flex-row lg:gap-x-6 gap-y-16">
         {/* <motion.div
           variants={fadeIn("right", 0.3)}
           initial={"hidden"}
@@ -34,11 +34,11 @@ export const About = () => {
           initial={"hidden"}
           whileInView={"show"}
           viewport={{ once: false, amount: 0.7 }}
-          className='w-full flex-1'
+          className='w-full lg:flex-1 mt-[-50px] '
         >
           <ComputersCanvas />
         </motion.div>
-        <div className="flex flex-col flex-1">
+        <div className="flex flex-col lg:flex-1">
           <div>
             <motion.h2
               variants={fadeIn("left", 0.3)}
@@ -103,7 +103,6 @@ export const About = () => {
           </motion.div>
         </div>
       </div>
-      <div className="flex md:hidden h-[300px] w-full"></div>
     </section>
   );
 };

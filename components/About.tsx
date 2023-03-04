@@ -5,6 +5,7 @@ import { fadeIn } from "../variant";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Stage } from "@react-three/drei";
 import Mac from "./Mac";
+import ComputersCanvas from "./canvas/ComputerCanvas";
 
 export const About = () => {
   const [ref, inView] = useInView({
@@ -13,8 +14,8 @@ export const About = () => {
 
   return (
     <section id="about" className="section" ref={ref}>
-      <div className="container mx-auto flex flex-col-reverse lg:flex-row items-center lg:gap-x-16 ">
-        <motion.div
+      <div className="container mx-auto flex flex-col lg:flex-row lg:gap-x-6 gap-y-10 items-center">
+        {/* <motion.div
           variants={fadeIn("right", 0.3)}
           initial={"hidden"}
           whileInView={"show"}
@@ -27,8 +28,17 @@ export const About = () => {
             </Stage>
             <OrbitControls enableZoom={false} autoRotate />
           </Canvas>
+        </motion.div> */}
+        <motion.div
+          variants={fadeIn("right", 0.3)}
+          initial={"hidden"}
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.7 }}
+          className='w-full flex-1'
+        >
+          <ComputersCanvas />
         </motion.div>
-        <div className="flex flex-col">
+        <div className="flex flex-col flex-1">
           <div>
             <motion.h2
               variants={fadeIn("left", 0.3)}

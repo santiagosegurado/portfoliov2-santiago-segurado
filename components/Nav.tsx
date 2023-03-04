@@ -1,5 +1,6 @@
 // Icons
 import { BiHomeAlt, BiUser } from "react-icons/bi";
+import { AiOutlineFilePdf } from "react-icons/ai";
 import { BsClipboardData, BsBriefcase, BsChatSquareText } from "react-icons/bs";
 
 // Links
@@ -29,6 +30,13 @@ export const Nav = () => {
           >
             <BiUser />
           </Link>
+          <a
+            href="/CVSantiagoSegurado.pdf"
+            download
+            className="cursor-pointer w-[60px] h-[60px] flex items-center justify-center"
+          >
+            <AiOutlineFilePdf />
+          </a>
           {/* <Link
             className="cursor-pointer w-[60px] h-[60px] flex items-center justify-center"
             to="service"

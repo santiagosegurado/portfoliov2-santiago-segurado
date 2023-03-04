@@ -2,6 +2,7 @@ import Image from "next/image";
 import NextLink from "next/link";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variant";
+import { Link } from "react-scroll";
 
 export const Work = () => {
   return (
@@ -22,12 +23,15 @@ export const Work = () => {
                 Proyectos mas relevantes en los que participe, siendo Full Stack
                 con el Stack Mern y Front End con Next.js o JavaScript Puro.
               </p>
-              <button
+              <Link
+                to="contact"
+                smooth={true}
+                spy={true}
                 type="button"
-                className="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-full text-base px-5 py-2.5 text-center mr-2 mb-2 text-[16px]"
+                className="cursor-pointer text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-full text-base px-5 py-2.5 text-center mr-2 mb-2 text-[16px]"
               >
                 Contactame
-              </button>
+              </Link>
             </motion.div>
             <NextLink href={"https://lenceriadanela.store/"}>
               <motion.div

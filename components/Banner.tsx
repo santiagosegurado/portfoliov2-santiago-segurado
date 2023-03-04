@@ -88,10 +88,10 @@ export const Banner = () => {
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
             >
-              <a href="#">
+              <a href="https://github.com/santiagosegurado">
                 <FaGithub />
               </a>
-              <a href="#">
+              <a href="https://www.linkedin.com/in/santiago-segurado-frontend/">
                 <FaLinkedin />
               </a>
             </motion.div>

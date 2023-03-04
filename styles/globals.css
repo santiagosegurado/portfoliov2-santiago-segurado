@@ -52,10 +52,10 @@ body {
     @apply font-secondary text-lg leading-8 text-white;
   }
   .h2 {
-    @apply font-primary text-[32px] mb-6 tracking-[10%] uppercase;
+    @apply font-primary text-[32px] mb-3 tracking-[10%] uppercase;
   }
   .h3 {
-    @apply font-primary font-semibold text-[26px] mb-6 leading-[46px];
+    @apply font-primary font-semibold text-[26px] mb-3 leading-[46px];
   }
   .btn {
     @apply rounded-full font-primary text-white font-medium;
@@ -78,5 +78,13 @@ body {
 }
 
 .text-gradient{
+  font-family: inherit;
+}
+
+.h2{
+  font-family: inherit;
+}
+
+.h3{
   font-family: inherit;
 }

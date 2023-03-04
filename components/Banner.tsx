@@ -19,7 +19,7 @@ export const Banner = () => {
   return (
     <div id="home" className="section h-[85vh]">
       <div className="container mx-auto">
-        <div className="flex flex-col gap-y-5 lg:flex-row items-center">
+        <div className="flex flex-col gap-y-5 md:flex-row items-center">
           <div className="flex-1 text-center lg:text-left">
             <div className="mb-10 text-[36px] flex flex-col font-semisbold">
               <motion.h1
@@ -96,15 +96,8 @@ export const Banner = () => {
               </a>
             </motion.div>
           </div>
-          {/* <Canvas style={{width:'500px', height:'500px'}}>
-            <Stage environment={'city'} intensity={0.8}>
-              <Mac/>
-
-            </Stage>
-            <OrbitControls enableZoom={false} autoRotate/>
-          </Canvas> */}
           <motion.div
-            className={"hidden lg:flex"}
+            className={"hidden md:flex"}
             variants={fadeIn("down", 0.5)}
             initial={"hidden"}
             whileInView={"show"}

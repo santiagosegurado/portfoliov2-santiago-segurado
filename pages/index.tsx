@@ -25,7 +25,7 @@ export default function Home() {
         {/* <Service /> */}
         <Work />
         <Contact />
-        <div className='h-[4000px]'></div>
+        <div className='h-[200px]'></div>
       </main>
     </>
   );

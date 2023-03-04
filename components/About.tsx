@@ -19,7 +19,7 @@ export const About = () => {
           initial={"hidden"}
           whileInView={"show"}
           viewport={{ once: false, amount: 0.7 }}
-          // className="md:flex hidden"
+          className="md:flex hidden"
         >
           <Canvas style={{ width: "450px", height: "450px" }}>
             <Stage environment={"city"} intensity={0.8}>
@@ -93,6 +93,7 @@ export const About = () => {
           </motion.div>
         </div>
       </div>
+      <div className="flex md:hidden h-[300px] w-full"></div>
     </section>
   );
 };

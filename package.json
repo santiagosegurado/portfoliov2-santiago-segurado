@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.10.0",
     "@react-three/drei": "^9.56.28",
     "@react-three/fiber": "^8.11.5",
     "@react-three/postprocessing": "^2.7.0",
@@ -26,6 +27,7 @@
     "react-intersection-observer": "^9.4.3",
     "react-responsive": "^9.0.2",
     "react-scroll": "^1.8.9",
+    "react-toastify": "^9.1.1",
     "react-type-animation": "^2.1.2",
     "three": "^0.150.1",
     "typescript": "4.9.5"

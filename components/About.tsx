@@ -15,7 +15,7 @@ export const About = () => {
     <section id="about" className="section" ref={ref}>
       <div className="container mx-auto flex flex-col-reverse lg:flex-row items-center lg:gap-x-16 ">
         <motion.div
-          variants={fadeIn("down", 0.3)}
+          variants={fadeIn("right", 0.3)}
           initial={"hidden"}
           whileInView={"show"}
           viewport={{ once: false, amount: 0.7 }}
@@ -31,7 +31,7 @@ export const About = () => {
         <div className="flex flex-col">
           <div>
             <motion.h2
-              variants={fadeIn("up", 0.3)}
+              variants={fadeIn("left", 0.3)}
               initial={"hidden"}
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
@@ -40,7 +40,7 @@ export const About = () => {
               Acerca de Mi.
             </motion.h2>
             <motion.h3
-              variants={fadeIn("up", 0.5)}
+              variants={fadeIn("left", 0.3)}
               initial={"hidden"}
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
@@ -50,11 +50,11 @@ export const About = () => {
               mayor virtud el Front End y Web Desing.
             </motion.h3>
             <motion.p
-              variants={fadeIn("up", 0.7)}
+              variants={fadeIn("left", 0.3)}
               initial={"hidden"}
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="text-zinc-400 mb-3"
+              className="text-zinc-300 mb-3"
             >
               Desarrollador con gran capacidad de resolución de problemas a
               través de mi creatividad y mi perseverancia, ademas de siempre
@@ -62,7 +62,7 @@ export const About = () => {
             </motion.p>
           </div>
           <motion.div
-            variants={fadeIn("up", 0.9)}
+            variants={fadeIn("left", 0.3)}
             initial={"hidden"}
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}

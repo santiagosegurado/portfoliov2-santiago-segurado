@@ -22,7 +22,7 @@ export default function Home() {
         <Banner />
         <Nav />
         <About />
-        <Service />
+        {/* <Service /> */}
         <Work />
         <Contact />
         <div className='h-[4000px]'></div>

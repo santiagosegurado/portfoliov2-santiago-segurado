@@ -34,7 +34,7 @@ export const About = () => {
           initial={"hidden"}
           whileInView={"show"}
           viewport={{ once: false, amount: 0.7 }}
-          className='w-full lg:flex-1 mt-[-50px] '
+          className="w-full lg:flex-1 mt-[-50px] md:flex hidden"
         >
           <ComputersCanvas />
         </motion.div>
@@ -102,6 +102,7 @@ export const About = () => {
             </div>
           </motion.div>
         </div>
+        <div className="h-[300px]"></div>
       </div>
     </section>
   );

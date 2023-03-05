@@ -38,7 +38,9 @@ export default function Home() {
         <Banner />
         <Nav />
         <About />
-        {/* <Service /> */}
+        <div className="h-[200px]"></div>
+        <Service />
+        <div className="h-[200px]"></div>
         <Work />
         <Contact />
         <div className="h-[200px]"></div>

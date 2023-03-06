@@ -12,6 +12,10 @@ export default function Home() {
   return (
     <>
       <Head>
+        <meta
+          name="google-site-verification"
+          content="SOuydXDlnwUyQdZkzpta5SdTno76qKhMMZ96aEZj05c"
+        />
         <title>Santiago Segurado | Full Stack Developer</title>
         <meta
           name="description"

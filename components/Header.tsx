@@ -1,10 +1,36 @@
+import { useState, useRef } from "react";
+
 // Img
 import Image from "next/image";
 import { Link } from "react-scroll";
+import confetti from 'canvas-confetti'
+
+import { Modal } from "./Modal";
 
 export const Header = () => {
+  
+  const [open, setOpen] = useState(false);
+
+  const cancelButtonRef = useRef(null);
+
+  const handleModalOpen = () => {
+
+    confetti({
+      particleCount: 100,
+      startVelocity: 30,
+      spread: 360,
+      origin: {
+        x: 0,
+        y: 0
+      }
+    });
+
+    setOpen(!open)
+  };
+
   return (
     <header className="py-8">
+      <Modal open={open} setOpen={setOpen} cancelButtonRef={cancelButtonRef} />
       <div className="container mx-auto flex justify-between items-center">
         <Image
           src="/logo.svg"
@@ -12,6 +38,7 @@ export const Header = () => {
           title="Full Stack Developer"
           width={150}
           height={150}
+          onDoubleClick={handleModalOpen}
         />
         <div>
           <Link

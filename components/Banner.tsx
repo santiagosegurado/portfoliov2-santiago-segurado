@@ -15,7 +15,6 @@ import {
 import Mac from "./Mac";
 
 export const Banner = () => {
-
   return (
     <div id="home" className="section h-[85vh]">
       <div className="container mx-auto">
@@ -88,10 +87,10 @@ export const Banner = () => {
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
             >
-              <a href="https://github.com/santiagosegurado">
+              <a href="https://github.com/santiagosegurado" target={'_blank'}>
                 <FaGithub />
               </a>
-              <a href="https://www.linkedin.com/in/santiago-segurado-frontend/">
+              <a href="https://www.linkedin.com/in/santiago-segurado-frontend/" target={'_blank'}>
                 <FaLinkedin />
               </a>
             </motion.div>

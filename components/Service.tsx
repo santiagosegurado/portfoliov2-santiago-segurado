@@ -19,19 +19,17 @@ export const Service = () => {
             icon={<SiJavascript />}
           >
             <h3 className="vertical-timeline-element-title">
-              Comienzo como Front End Developer
+              Proyectos de JavaScipt Puro
             </h3>
             <p>
-              Empiezo mi camino en la programacion de la mano de JavaScript,
-              construyendo mis primeras aplicaciones con HTML, CSS y JS. <br />
-              Ademas de arrancar mis estudios como Tecnico Universitario en
-              Desarrollo Web en la UNLAM.
+              HTML, CSS, JavaScipt y Bootstrap
             </p>
             <ul style={{ listStyle: "outside" }} className="flex flex-col p-3">
               <li>
                 <a
                   href="https://santiagosegurado.github.io/blackjack-js/"
                   className="hover:text-accent transition-all duration-300"
+                  target={'_blank'}
                 >
                   Black Jack (Juego)
                 </a>
@@ -48,17 +46,17 @@ export const Service = () => {
             icon={<SiReact />}
           >
             <h3 className="vertical-timeline-element-title">
-              Conociendo mas del mundo Front End
+              Proyectos de Front End con React
             </h3>
             <p>
-              Expendi mis conociminetos probando nuevas librerias. <br />
-              Me empape de todo el ecosistema de React.
+              React.js, CSS, Fetch APi, Axios, Next.js y NextUI
             </p>
             <ul style={{ listStyle: "outside" }} className="flex flex-col p-3">
               <li>
                 <a
                   href="https://santiagosegurado.github.io/gif-app-react/"
                   className="hover:text-[#42A6E3] transition-all duration-300"
+                  target={'_blank'}
                 >
                   Gif App (Buscador de Gifs)
                 </a>
@@ -67,6 +65,7 @@ export const Service = () => {
                 <a
                   href="https://santiagosegurado.github.io/react-precio-crypto/"
                   className="hover:text-[#42A6E3] transition-all duration-300"
+                  target={'_blank'}
                 >
                   Crypto App (Precios de Cryptos)
                 </a>
@@ -75,6 +74,7 @@ export const Service = () => {
                 <a
                   href="https://santiagosegurado.github.io/react-precio-crypto/"
                   className="hover:text-[#42A6E3] transition-all duration-300"
+                  target={'_blank'}
                 >
                   Pokedex(PokeApi)
                 </a>
@@ -90,27 +90,28 @@ export const Service = () => {
             icon={<SiNodedotjs />}
           >
             <h3 className="vertical-timeline-element-title">
-              Conociendo mas del mundo Front End
+              Proyectos Full Stack
             </h3>
             <p>
-              Expendi mis conociminetos probando nuevas librerias. <br />
-              Me empape de todo el ecosistema de React.
+              React.js, Node.js, Express, Material UI, Tailwind, Wordpress, Firebase
             </p>
             <ul style={{ listStyle: "outside" }} className="flex flex-col p-3">
               <li>
                 <a
-                  href="https://santiagosegurado.github.io/gif-app-react/"
+                  href="https://lenceriadanela.store/"
                   className="hover:text-accent transition-all duration-300"
+                  target={'_blank'}
                 >
-                  Gif App (Buscador de Gifs)
+                  Lenceria Danela (Ecommerce)
                 </a>
               </li>
               <li>
                 <a
-                  href="https://santiagosegurado.github.io/react-precio-crypto/"
+                  href="https://santiagosegurado.github.io/react-journal-app/"
                   className="hover:text-accent transition-all duration-300"
+                  target={'_blank'}
                 >
-                  Crypto App (Precios de Cryptos)
+                  Journal App (Diario Intimo)
                 </a>
               </li>
             </ul>

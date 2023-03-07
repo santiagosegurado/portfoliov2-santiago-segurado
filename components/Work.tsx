@@ -33,7 +33,7 @@ export const Work = () => {
                 Contactame
               </Link>
             </motion.div>
-            <NextLink href={"https://lenceriadanela.store/"}>
+            <NextLink href={"https://lenceriadanela.store/"} target={'_blank'}>
               <motion.div
                 variants={fadeIn("right", 0.3)}
                 initial={"hidden"}
@@ -71,7 +71,7 @@ export const Work = () => {
             viewport={{ once: false, amount: 0.7 }}
             className="flex flex-1 flex-col gap-y-10"
           >
-            <NextLink href={"https://frontend-calendar-app.vercel.app/"}>
+            <NextLink href={"https://frontend-calendar-app.vercel.app/"} target={'_blank'}>
               <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
                 {/* overlay */}
                 <div className="group-hover:bg-black/80 w-full h-full absolute z-40 transition-all duration-300"></div>

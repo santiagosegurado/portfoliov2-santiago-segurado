@@ -69,7 +69,7 @@ export const Modal = ({ open, setOpen, cancelButtonRef }: any) => {
                     onClick={() => setOpen(false)}
                   >
                     <a
-                      href="https://www.linkedin.com/feed/update/urn:li:activity:7036447517244297216/"
+                      href="https://www.linkedin.com/posts/santiago-segurado-frontend_javascript-reactjs-nextjs-activity-7038888447553474561-85un/?utm_source=share&utm_medium=member_desktop"
                       target={"_blank"}
                     >
                       Comentar
